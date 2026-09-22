@@ -10,4 +10,5 @@ PBIFNet: A Prompt-Guided Bi-directional Induced Fit Network for Drug-PTM Interac
 
 ```bash
 git clone https://github.com/liushiyun030801/PBIFNet.git
-The package is developed based on the Python libraries torch and torch-geometric (PyTorch Geometric) framework, and can be run on GPU (recommend) or CPU.
+```
+*  The package is developed based on the Python libraries torch and torch-geometric (PyTorch Geometric) framework, and can be run on GPU (recommend) or CPU.
