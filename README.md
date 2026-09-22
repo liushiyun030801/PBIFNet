@@ -20,10 +20,6 @@ pip3 install torch torchvision torchaudio
 ```bash
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 ```
-Install other the required packages.
-```bash
-pip install -r requirement.txt
-```
 Required package list
 ```bash
 pandas>=2.1.4
