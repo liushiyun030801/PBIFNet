@@ -33,15 +33,25 @@ scikit-learn>=1.2.2
 scipy>=1.11.4
 ```
 Data format
+
 the drug dataset Data format must be .csv (comma-separated values).
+
 the first column is drug name, and the second column must be unique SMILES strings.
+
 For a detailed format, refer to Drug_SMILES.csv.
+
 the PTM dataset Data format must be .csv (comma-separated values).
+
 the first column is PTM name, and the second column must be unique PTM peptide window sequences.
+
 For a detailed format, refer to Clean_data/PTM_peptide.csv.
+
 the drug-PTM interaction Data format must be .csv (comma-separated values).
+
 interaction Data, column = ['Drug', 'PTM'].
+
 For a detailed format, refer to DrugPTM_rawdata.csv.
+
 PBIFNet help
 the PBIFNet.py in PBIFNet file is a python script (python==3.11.7) for convenience using PBIFNet by Command node
 The introduction of the PBIFNet parameters can be achieved by naming them as follows:
@@ -53,14 +63,14 @@ Output
 
 ```Bash
 $ python PBIFNet.py -h
-usage: PBIFNet.py [-h] [--K K] [--M M] [-b BATCH_SIZE] [-e EPOCHS] [--lr LR]
+usage: PBIFNet.py [-h] [--K K] [-b BATCH_SIZE] [-e EPOCHS] [--lr LR]
 
 PBIFNet: A Pre-trained Language Model and Induced-Fit Mechanism-Based
 Framework for Drug-PTM Interaction Prediction.
 
 options:
   -h, --help            show this help message and exit
-  --K K                 Number of virtual microenvironments. Default is 2.
+  --K K                 Number of latent subspaces. Default is 2.
   -b BATCH_SIZE, --batch_size BATCH_SIZE
                         Batch size for training and evaluation. Default is 128.
   -e EPOCHS, --epochs EPOCHS
