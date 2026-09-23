@@ -70,7 +70,7 @@ options:
   -b BATCH_SIZE, --batch_size BATCH_SIZE
                         Batch size for training and evaluation. Default is 128.
   -e EPOCHS, --epochs EPOCHS
-                        Number of training epochs per fold. Default is 100.
+                        Number of training epochs per fold. Default is 80.
   --lr LR               Learning rate. Default is 1e-4.
 ```
 
