@@ -67,7 +67,7 @@ from torch_geometric.nn import HGTConv
 
 
 class DrugConditionedPTMAdaptation(nn.Module):
-    """DPA: drug-conditioned PTM adaptation (原 VirtualPTMMicroenv)"""
+    """DPA: drug-conditioned PTM adaptation """
     def __init__(self, hidden_dim=128, num_subspaces=2):
         super(DrugConditionedPTMAdaptation, self).__init__()
         self.num_subspaces = num_subspaces
@@ -84,7 +84,7 @@ class DrugConditionedPTMAdaptation(nn.Module):
 
 
 class PTMConditionedDrugAdaptation(nn.Module):
-    """PDA: PTM-conditioned drug adaptation (原 VirtualPharmacophoreRouting)"""
+    """PDA: PTM-conditioned drug adaptation """
     def __init__(self, hidden_dim=128, num_subspaces=2):
         super(PTMConditionedDrugAdaptation, self).__init__()
         self.num_subspaces = num_subspaces
